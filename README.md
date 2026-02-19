@@ -44,13 +44,13 @@ This project demonstrates structured programming, operator mapping using enum an
 ---
 
 ## ▶ How to Run
-```
+
 1. Compile the program:
-```
-```cpp
+
+---terminal
 Run:gcc calculator.c -o calculator
-```
-```
+---
+
 ## 📌 Learning Outcome
 
 This project improved my understanding of:
