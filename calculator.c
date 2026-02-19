@@ -226,8 +226,10 @@ int main(){
                     }
 
                   
-                   char op_str[2]; // Buffer to hold operator as string (1 character + null terminator)
-                   sprintf(op_str, "%c", op_ch); // Convert operator character to string
+                               char op_str[2]; // Buffer to hold operator as string (1 character + null terminator)
+                               op_str[0] = op_ch;   // Convert operator character to string
+                               op_str[1] = '\0'; 
+                        
                      for (int i = 0; i < sizeof(operator_map) / sizeof(operator_map[0]); i++) 
                      {
                             if (strcmp(operator_map[i].operator_str, op_str) == 0) {
