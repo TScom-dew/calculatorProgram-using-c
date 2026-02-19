@@ -47,7 +47,7 @@ This project demonstrates structured programming, operator mapping using enum an
 
 1. Compile the program:
 
----copy
+---
     Run:gcc calculator.c -o calculator
 ---
 
