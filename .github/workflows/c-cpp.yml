@@ -21,7 +21,7 @@ jobs:
       run: ls -la
        
     - name: Configure Cmake
-      run: cmake -B build -S src
+      run: cmake -B build -S .
       
     - name: Build project
       run: cmake --build build
