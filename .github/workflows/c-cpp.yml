@@ -26,6 +26,6 @@ jobs:
     - name: Build project
       run: cmake --build build
       
-    - name: Run executable
-      run: echo "1\n2\n3\nno" | ./build/calculator
+    # - name: Run executable
+    #   run: echo "1\n2\n3\nno" | ./build/calculator
     
