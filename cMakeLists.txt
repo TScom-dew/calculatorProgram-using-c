@@ -1,16 +1,16 @@
-# 1. Minimum version specify karo
+#  Minimum version
 cmake_minimum_required(VERSION 4.3.2)
 
-# 2. Project ka naam aur version
+#  Project ka naam
 project(ArithmeticCalculator VERSION 1.0)
 
-# 3. C standard set karo (C11 ya C99)
+# C standard setting  (C11 ya C99)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-# 4. Executable file define karo (Source files list karo)
+#  Executable file defining 
 # Agar files badhe toh yahan add karte jao
 add_executable(calculator main.c help.c)
 
-# 5. Math library link karo (Linux/Unix par zaroori hai)
+# Math library linking 
 target_link_libraries(calculator m)
