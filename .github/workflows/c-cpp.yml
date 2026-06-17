@@ -12,11 +12,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: build
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Configure Cmake
+      run: cmake -B build -S .
+      
+    - name: Build project
       run: cmake --build .
-    - name: Run
+      
+    - name: Run executable
       run: ./calculator < input.txt
     
