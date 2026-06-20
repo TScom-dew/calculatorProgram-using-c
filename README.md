@@ -1,43 +1,49 @@
-# Arithmetic Calculator in C
+# Arithmetic Calculator in C 🧮
 
-A modular command-line calculator implemented in C, focusing on clean code architecture and robust input handling.
+<p align="center">
+  <img src="https://github.com/TScom-dew/calculatorProgram-using-c/actions/workflows/c-cpp.yml/badge.svg" alt="Build Status"/>
+</p>
 
-## Overview
-This project provides a functional interface for arithmetic, trigonometric, and logarithmic calculations. It is designed to demonstrate modular C programming, using header/source separation and safe input validation.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C-blue.svg?style=flat-square" alt="Language">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/last-commit/TScom-dew/calculatorProgram-using-c?style=flat-square" alt="Last Commit">
+</p>
 
-## Features
-- **Arithmetic:** Basic operations (+, -, *, /, %)
-- **Advanced Math:** Power, Square Root, and Logarithm (base 10)
-- **Trigonometry:** Sine, Cosine, Tangent, and their inverse functions
-- **Error Handling:** Division-by-zero checks and input validation
-
-## Technical Implementation
-- **Structure:** Modular design using `main.c`, `help.c`, and `help.h`.
-- **Validation:** Uses `fgets` and `scanf` to prevent input-related crashes.
-- **Build System:** Supports [CMake](https://cmake.org/) for cross-platform compilation.
-
-## Build and Run
-
-### Using CMake (Recommended)
-```bash
-# Create and enter build directory
-mkdir build && cd build
-
-# Configure and build
-cmake ..
-cmake --build .
-
-# Run
-.\calculator.exe   # Windows
-./calculator       # Linux/macOS
-
-```
-### Learning Outcomes
-- Understanding of header-source separation in C.
-- Implementing CMake for build automation.
-- Safe CLI input handling and logic modularity.
-
+A robust, modular command-line calculator implemented in C. This project demonstrates clean code architecture, header-source separation, and error handling.
 
 ---
 
-## Maintained by Ashlok Kumar [TScom-dew](https://github.com/TScom-dew/)
+## 🚀 Features
+
+* **Arithmetic Operations:** Basic math (+, -, *, /, %) with operator precedence.
+* **Advanced Math:** Power, Square Root, and Logarithm (base 10).
+* **Trigonometry:** Sine, Cosine, Tangent, and their inverse functions.
+* **Robust Error Handling:** Division-by-zero protection, invalid input sanitization, and overflow prevention.
+
+## 🛠️ Technical Stack
+
+* **Language:** C (Standard C11)
+* **Build System:** [CMake](https://cmake.org/)
+* **Architecture:** Modular design (`main.c`, `help.c`, `help.h`)
+* **Input Handling:** Secure usage of `fgets` and `scanf` for crash prevention.
+
+## 📦 Build and Run
+
+### Prerequisites
+* Ensure you have a C compiler (GCC/Clang) and [CMake](https://cmake.org/) installed.
+
+### Using CMake (Recommended)
+```bash
+# Clone the repository
+git clone [https://github.com/TScom-dew/calculatorProgram-using-c.git](https://github.com/TScom-dew/calculatorProgram-using-c.git)
+cd calculatorProgram-using-c
+
+# Build the project
+mkdir build && cd build
+cmake ..
+cmake --build .
+
+# Run the application
+./calculator  # On Linux/macOS
+.\calculator  # On Windows
