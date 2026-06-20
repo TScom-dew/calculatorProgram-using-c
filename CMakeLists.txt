@@ -9,7 +9,6 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 #  Executable file defining 
-# Agar files badhe toh yahan add karte jao
 add_executable(calculator main.c help.c)
 
 # Math library linking 
