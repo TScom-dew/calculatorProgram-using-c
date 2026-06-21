@@ -94,7 +94,7 @@ void inputangle(double *angle){
 
 // for single value
 
-void Single_vallue(double *value){
+void Single_value(double *value){
     //single number
     while(true){
         printf("Enter  value: ");
