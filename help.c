@@ -3,11 +3,12 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<math.h>
+#define PI 3.14159
 
 //intro function
 
 void intro(){
-    printf("\n===================================================\n");
+    printf("\n=================================================\n");
     printf("Welcome to the Arithmetic Calculator!\n");
     printf("You can perform operations many operations\n");
     printf("===================================================\n\n");
@@ -34,6 +35,16 @@ void intro(){
     printf("Enter your choice (1-15): ");
 }
 
+
+// value conversion
+
+void radianTodegree(double *angle){
+    *angle = *angle * (180 / PI);
+}
+
+void degreeToradian(double *angle){
+    *angle = *angle * (PI/180);
+}
 
 // for input1
 void  takeinput1(double *number1){
@@ -63,6 +74,37 @@ void takeinput2(double *number2){
     }
 }
 
+
+// taking angle
+void inputangle(double *angle){
+
+    //angle
+    while(true){
+        printf("Enter angle in degree: ");
+        if((scanf("%lf", angle)) != 1){
+            printf("Invalid input!\n");
+        }else{
+            break; // break loop and move ahead;
+        }
+    }
+    // converting value in radian
+    degreeToradian(angle);
+}
+
+
+// for single value
+
+void Single_vallue(double *value){
+    //single number
+    while(true){
+        printf("Enter  value: ");
+        if((scanf("%lf", value)) != 1){
+            printf("Invalid value!\n");
+        }else{
+            break; // break loop and move ahead;
+        }
+    }
+}
 
 
  // addition function
@@ -140,6 +182,7 @@ void takeinput2(double *number2){
         void logarithm(double num) {
                 if (num > 0) {
                     printf(" Logarithm(10) of %0.2lf = %.2lf\n", num , log10(num));
+                   
                     return ; // this will calculate the logarithm of number to the base 10
                 } else {
                     printf("Error! Logarithm is not defined for non-positive numbers.");
@@ -150,20 +193,24 @@ void takeinput2(double *number2){
 
         // trigonometric functions
         void sine(double angle) {
-               
-                printf(" Sine of %0.2lf = %.2lf\n",  angle,  sin(angle));
-                return ;
+            double result = sin(angle);
+            radianTodegree(&angle);
+            printf(" Sine of %0.2lf = %.2lf\n", angle, result);
+            return;
         }   
         
         void cosine(double angle) {
-
-            printf(" Cosine of %0.2lf = %.2lf\n",  angle, cos(angle));
-            return ;
+            double result = cos(angle);
+            radianTodegree(&angle);
+            printf(" cos of %0.2lf = %.2lf\n", angle, result);
+            return;
         }
         
         void tangent(double angle) {
-            printf(" Tangent of %0.2lf = %.2lf\n",  angle, tan(angle));
-                return ;
+            double result = tan(angle);
+            radianTodegree(&angle);
+            printf(" tan of %0.2lf = %.2lf\n", angle, result);
+            return;
         }
 
         // inverse trigonometric functions
@@ -201,4 +248,3 @@ void takeinput2(double *number2){
                 printf(" %.2lf %c %.2lf = %.2lf\n", num1, operator, num2, result);
             }
          }
-
