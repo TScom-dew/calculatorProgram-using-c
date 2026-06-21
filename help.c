@@ -163,7 +163,7 @@ void Single_vallue(double *value){
                     // return 0; // Return 1 or handle as needed
                 } else if (n == 0 || n == 1) {
 
-                    printf(" Factorial of %d = %llu\n", n, 1); // Print as integer since factorial is an integer
+                    printf(" Factorial of %d = %d\n", n, 1); // Print as integer since factorial is an integer
                     return ;
                 } else {
                     unsigned long long result = 1;
