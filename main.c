@@ -7,6 +7,8 @@
 
  double number1 ;
  double number2 ;
+ double singleNumber;
+ double angle;
  int choice ;
 
 
@@ -46,8 +48,10 @@ int main(){
         if(choice<=6 && choice>=1){
             takeinput1(&value1);
             takeinput2(&value2);
-        }else{
-            takeinput1(&value1);
+        }else if(choice==8 || choice==9|| choice==10){
+            inputangle(&angle);
+        }else {
+            Single_vallue(&singleNumber);
         }
     
     
@@ -82,31 +86,31 @@ int main(){
                     printResult(value1, value2, result, '^');
                     break;
             case SQRT:
-                 square_root(value1);
+                 square_root(singleNumber);
                 break;
             case SIN:
-                sine(value1);
+                sine(angle);
                 break;
             case COS:
-                cosine(value1);
+                cosine(angle);
                 break;
             case TAN:
-                tangent(value1);
+                tangent(angle);
                 break;
             case ARCSIN:
-                 arcsine(value1);
+                 arcsine(singleNumber);
                 break;
             case ARCCOS:
-                arccosine(value1);
+                arccosine(singleNumber);
                 break;
             case ARCTAN:
-                arctangent(value1);
+                arctangent(singleNumber);
                 break;
             case LOG:
-                 logarithm(value1);
+                 logarithm(singleNumber);
                 break;
             case FACT:
-                factorial((int)value1); // Convert to integer for factorial calculation
+                factorial((int)singleNumber); // Convert to integer for factorial calculation
                 break;
             default:
                 printf("\nError! Operator is not correct\n");
