@@ -31,6 +31,17 @@ void showMenu() ;
 void  takeinput1(double *number1);
 void  takeinput2(double *number2);
 
+void inputangle(double *angle);
+
+void Single_vallue(double *value);
+
+// value conversion
+
+void radianTodegree(double *angle);
+
+void degreeToradian(double *angle);
+
+
 // addition function declaration
 double addition(double a, double b) ;
     
