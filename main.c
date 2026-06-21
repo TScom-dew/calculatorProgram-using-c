@@ -51,7 +51,7 @@ int main(){
         }else if(choice==8 || choice==9|| choice==10){
             inputangle(&angle);
         }else {
-            Single_vallue(&singleNumber);
+            Single_value(&singleNumber);
         }
     
     
