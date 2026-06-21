@@ -33,7 +33,7 @@ void  takeinput2(double *number2);
 
 void inputangle(double *angle);
 
-void Single_vallue(double *value);
+void Single_value(double *value);
 
 // value conversion
 
